@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "wildcard.component.scss"
+    ],
+    "names": [],
+    "file": "wildcard.component.css"
+}

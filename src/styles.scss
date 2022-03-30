@@ -1,0 +1,100 @@
+
+
+.main_container{
+  max-width: 1210px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+:root{
+  --primary-color: #1d589e;
+  --white-color: #fff;
+  --link-color: #486aba;
+  --custom-button-color: #163172;
+  --common-color: #454545; 
+}
+a{
+  text-decoration: none;
+  color: var(--link-color);
+  
+}
+
+header{
+  width: 100%;
+  padding: 52px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  .main_container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .logo{
+      img{
+          width: 90px;
+          display: block;
+      }
+  }
+ 
+}
+
+@media only screen and (max-width:750px){
+  header{
+    position: relative;
+    padding: 15px 0;
+      .main_container{
+          flex-direction: column;
+      }
+  }
+  
+}
+
+.mat-custom-background-button {
+  background-color: var(--custom-button-color);
+  color: var(--white-color);
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.mat-custom-strock-button {
+  color: #163172;
+  border-color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+
+.custom_button{
+  a{
+    height: 36px;
+    padding: 10px 50px 10px 24px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 12px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    position: relative;
+      &::before{
+        background-image: url(../src/assets/images/arrow.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 29px;
+        height: 29px;
+        border-radius: 100%;
+        background-color: var(--white-color);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 4px;
+        content: "";
+      }
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}

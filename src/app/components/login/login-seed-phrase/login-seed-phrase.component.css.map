@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "login-seed-phrase.component.scss"
+    ],
+    "names": [],
+    "file": "login-seed-phrase.component.css"
+}
